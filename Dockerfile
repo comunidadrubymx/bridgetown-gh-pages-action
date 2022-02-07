@@ -7,7 +7,7 @@ ENV LANGUAGE en_US.UTF-8
 RUN apk --no-cache add build-base git; \
   apk add --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ --no-cache \
   nodejs \
-  nodejs-npm \
+  npm \
   yarn
 
 # This is our entrypoint to our custom scripts
