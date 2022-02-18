@@ -19,7 +19,7 @@ printf "\nInstalling Node Dependencies..."
 yarn install --silent
 
 printf "\n\nRunning Production Build...\n"
-BRIDGETOWN_ENV=production NODE_ENV=production yarn webpack-build && yarn build
+BRIDGETOWN_ENV=production NODE_ENV=production bin/bridgetown build
 
 printf "\n\nCreating .nojekyll File...\n"
 cd "${INPUT_BUILD_LOCATION}"
